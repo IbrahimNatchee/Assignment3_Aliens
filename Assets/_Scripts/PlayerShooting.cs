@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerShooting : MonoBehaviour {
 
@@ -43,4 +44,10 @@ public class PlayerShooting : MonoBehaviour {
 			this.RifleShotSound.Play();
 		}
 	}
+
+    //if I touch anything it will transport me to another scene
+    void OnTriggerEnter(Collider other){
+        SceneManager.LoadScene("OutDoor");
+
+    }
 }

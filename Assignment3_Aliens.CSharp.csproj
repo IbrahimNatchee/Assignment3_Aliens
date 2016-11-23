@@ -135,6 +135,7 @@
     <Compile Include="Assets\_Imported Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
     <Compile Include="Assets\_Scripts\EnemyController.cs" />
     <Compile Include="Assets\_Scripts\FollowPlayer.cs" />
+    <Compile Include="Assets\_Scripts\GameController.cs" />
     <Compile Include="Assets\_Scripts\PlayerShooting.cs" />
   </ItemGroup>
   <ItemGroup>

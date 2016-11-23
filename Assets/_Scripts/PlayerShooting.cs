@@ -1,4 +1,13 @@
-﻿using UnityEngine;
+﻿/* Source File Name: GameController
+ * Author's Name: Ibrahim Natchee
+ * Last Modified By: Ibrahim Natchee
+ * Date Modified Last: October 29 2016
+ * Program Description: To create and control UI
+ * Revision History: October 29 2016
+ 
+ */
+
+using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
@@ -46,8 +55,28 @@ public class PlayerShooting : MonoBehaviour {
 	}
 
     //if I touch anything it will transport me to another scene
-    void OnTriggerEnter(Collider other){
-        SceneManager.LoadScene("OutDoor");
+    //void OnTriggerEnter(Collider other){
+      //  SceneManager.LoadScene("OutDoor");
+
+    //}
+
+    void OnTriggerEnter(Collider theCollision)
+    {
+        if (theCollision.gameObject.tag == "Hell") { 
+            SceneManager.LoadScene("Hell");
 
     }
+    else if (theCollision.gameObject.tag == "Exit")
+     {
+         SceneManager.LoadScene("OutDoor");
+     }   
+}
+   /* function OnTriggerEnter(collider : Collider)
+    {
+        if (collider.tag == "Hell")
+        {
+            fallingAnimation.Play();
+            
+        }
+    } */
 }

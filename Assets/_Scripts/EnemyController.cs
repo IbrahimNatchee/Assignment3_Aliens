@@ -1,4 +1,13 @@
-﻿using UnityEngine;
+﻿/* Source File Name: GameController
+ * Author's Name: Ibrahim Natchee
+ * Last Modified By: Ibrahim Natchee
+ * Date Modified Last: October 29 2016
+ * Program Description: To create and control UI
+ * Revision History: October 29 2016
+ 
+ */
+
+using UnityEngine;
 using System.Collections;
 
 public class EnemyController : MonoBehaviour {

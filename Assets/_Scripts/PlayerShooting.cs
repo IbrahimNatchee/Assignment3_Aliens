@@ -54,13 +54,20 @@ public class PlayerShooting : MonoBehaviour {
 		}
 	}
 
+
+    void OnTriggerEnter(Collider other){
+        if (other.gameObject.CompareTag("Exit")) { 
+        SceneManager.LoadScene("OutDoor");
+        }
+    }
+
     //if I touch anything it will transport me to another scene
     //void OnTriggerEnter(Collider other){
       //  SceneManager.LoadScene("OutDoor");
 
     //}
 
-    void OnTriggerEnter(Collider theCollision)
+   /* void OnTriggerEnter(Collider theCollision)
     {
         if (theCollision.gameObject.tag == "Hell") { 
             SceneManager.LoadScene("Hell");
@@ -69,8 +76,8 @@ public class PlayerShooting : MonoBehaviour {
     else if (theCollision.gameObject.tag == "Exit")
      {
          SceneManager.LoadScene("OutDoor");
-     }   
-}
+     } 
+}*/
    /* function OnTriggerEnter(collider : Collider)
     {
         if (collider.tag == "Hell")

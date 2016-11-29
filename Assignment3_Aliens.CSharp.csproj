@@ -137,6 +137,7 @@
     <Compile Include="Assets\_Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\_Scripts\GameController.cs" />
     <Compile Include="Assets\_Scripts\PlayerShooting.cs" />
+    <Compile Include="Assets\_Scripts\TikkiController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\_Imported Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />

@@ -13,7 +13,7 @@ using System.Collections;
 public class EnemyController : MonoBehaviour {
 
 	// PUBLIC INSTANCE VARIABLES
-	public NavMeshAgent Agent;
+	public UnityEngine.AI.NavMeshAgent Agent;
 
 	// PRIVATE INSTANCE VARIABLES
 	private Transform Player;

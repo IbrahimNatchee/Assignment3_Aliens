@@ -21,11 +21,18 @@ public class PlayerShooting : MonoBehaviour {
 	public AudioSource RifleShotSound;
 	public Transform PlayerCam;
 
-	// PRIVATE VARIABLES
+    // PRIVATE VARIABLES
+    private GameObject _gameControllerObject;
+    private GameControllerScore _gameControllerScore;
+    
+    
+    // Use this for initialization
+    void Start () {
 
-	// Use this for initialization
-	void Start () {
-	}
+        this._gameControllerObject = GameObject.Find("GameControllerScore");
+        this._gameControllerScore = this._gameControllerObject.GetComponent<GameControllerScore>() as GameControllerScore;
+
+    }
 	
 	// Update is called once per frame (for Physics)
 	void FixedUpdate () {
@@ -41,7 +48,8 @@ public class PlayerShooting : MonoBehaviour {
 
 				if (hit.transform.gameObject.CompareTag ("Alien")) {
 					Instantiate (this.Explosion, hit.point, Quaternion.identity);
-					Destroy (hit.transform.gameObject);
+                    this._gameControllerScore.ScoreValue = this._gameControllerScore.ScoreValue + 10;
+                    Destroy (hit.transform.gameObject);
 				} else {
 					Instantiate (this.BulletImpact, hit.point, Quaternion.identity);
 				}
@@ -58,6 +66,10 @@ public class PlayerShooting : MonoBehaviour {
     void OnTriggerEnter(Collider other){
         if (other.gameObject.CompareTag("Exit")) { 
         SceneManager.LoadScene("OutDoor");
+        }
+        if (other.gameObject.CompareTag("Alien"))
+        {
+            this._gameControllerScore.LivesValue = this._gameControllerScore.LivesValue - 1;
         }
     }
 

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment3_Aliens.CSharp", "Assignment3_Aliens.CSharp.csproj", "{742FC6D8-EE61-CBF3-6EB5-62750C09064A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment3_Aliens", "Assignment3_Aliens.csproj", "{A59C856B-CA26-D578-95C2-D8E405F24D0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment3_Aliens.CSharp.Editor", "Assignment3_Aliens.CSharp.Editor.csproj", "{529E4BFB-549B-F9DB-EC09-109791410AF8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment3_Aliens.Editor", "Assignment3_Aliens.Editor.csproj", "{8C00DF8C-5D91-517E-1189-9DBD0BCF20B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{742FC6D8-EE61-CBF3-6EB5-62750C09064A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{742FC6D8-EE61-CBF3-6EB5-62750C09064A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{742FC6D8-EE61-CBF3-6EB5-62750C09064A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{742FC6D8-EE61-CBF3-6EB5-62750C09064A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{529E4BFB-549B-F9DB-EC09-109791410AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{529E4BFB-549B-F9DB-EC09-109791410AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{529E4BFB-549B-F9DB-EC09-109791410AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{529E4BFB-549B-F9DB-EC09-109791410AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A59C856B-CA26-D578-95C2-D8E405F24D0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A59C856B-CA26-D578-95C2-D8E405F24D0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A59C856B-CA26-D578-95C2-D8E405F24D0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A59C856B-CA26-D578-95C2-D8E405F24D0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C00DF8C-5D91-517E-1189-9DBD0BCF20B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C00DF8C-5D91-517E-1189-9DBD0BCF20B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C00DF8C-5D91-517E-1189-9DBD0BCF20B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C00DF8C-5D91-517E-1189-9DBD0BCF20B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

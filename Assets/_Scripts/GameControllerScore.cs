@@ -1,4 +1,12 @@
-﻿using UnityEngine;
+﻿/* Source File Name: GameController
+ * Author's Name: Ibrahim Natchee and Mamun Rahman
+ * Last Modified By: Ibrahim Natchee
+ * Date Modified Last: December 5th 2016
+ * Program Description: this file is GameController cs file for the game
+ * Revision History: December 5th 2016
+ */
+
+using UnityEngine;
 using System.Collections;
 
 // reference to the UI namespace
@@ -7,15 +15,7 @@ using UnityEngine.SceneManagement;
 
 // reference to manage my scenes
 using UnityEngine.SceneManagement;
-/**
- * This is a Platformer game 
- * 
- * @FileName: GameController.cs
- * @Author Md Mamunur Rahman
- * @student ID: 300872772
- * @Last Update 21-October-2016
- * @description: this file is GameController cs file for the game
- */
+
 
 /**  
 * <summary>  
@@ -48,7 +48,7 @@ public class GameControllerScore : MonoBehaviour
             if (this._livesValue <= 0)
             {
                 this.LivesLabel.text = "Lives: 0";
-                SceneManager.LoadScene("ReStart");
+                SceneManager.LoadScene("GameOver");
 
             }
             else

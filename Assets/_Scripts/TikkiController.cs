@@ -1,4 +1,14 @@
-﻿using UnityEngine;
+﻿/* Source File Name: GameController
+ * Author's Name: Ibrahim Natchee and Mamun Rahman
+ * Last Modified By: Ibrahim Natchee
+ * Date Modified Last: December 5th 2016
+ * Program Description: this file is going to describe how the tikki item is going to effect the score, how it moves and what it does
+ * Revision History: December 5th 2016
+ */
+
+
+
+using UnityEngine;
 using System.Collections;
 
 public class TikkiController : MonoBehaviour {
@@ -8,15 +18,20 @@ public class TikkiController : MonoBehaviour {
     //it will wait 0.7 seconds before playing
     private WaitForSeconds waitTime = new WaitForSeconds (0.7f);
 
-	// Use this for initialization
-	void Start () {
-	
-	}
+
+
+
+    // Use this for initialization
+    void Start () {
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+        
+           
+        
+    }
 
     //ibncase player goes through the Tikki what would happen? we gotta tell the game
     void OnTriggerEnter(Collider other){

@@ -1,9 +1,9 @@
 ﻿/* Source File Name: GameController
- * Author's Name: Ibrahim Natchee
+ * Author's Name: Ibrahim Natchee and Mamun Rahman
  * Last Modified By: Ibrahim Natchee
- * Date Modified Last: October 29 2016
+ * Date Modified Last: December 5th 2016
  * Program Description: To create and control UI
- * Revision History: October 29 2016
+ * Revision History: December 5th 2016
  
  */
 

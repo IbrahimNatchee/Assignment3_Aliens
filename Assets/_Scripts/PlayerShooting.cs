@@ -1,9 +1,9 @@
 ﻿/* Source File Name: GameController
- * Author's Name: Ibrahim Natchee
+ * Author's Name: Ibrahim Natchee and Mamun Rahman
  * Last Modified By: Ibrahim Natchee
- * Date Modified Last: October 29 2016
- * Program Description: To create and control UI
- * Revision History: October 29 2016
+ * Date Modified Last: December 5th 2016
+ * Program Description: Controls player movement and mechanics
+ * Revision History: December 5th 2016
  
  */
 
@@ -50,7 +50,10 @@ public class PlayerShooting : MonoBehaviour {
 					Instantiate (this.Explosion, hit.point, Quaternion.identity);
                     this._gameControllerScore.ScoreValue = this._gameControllerScore.ScoreValue + 10;
                     Destroy (hit.transform.gameObject);
-				} else {
+				}
+               
+
+                else {
 					Instantiate (this.BulletImpact, hit.point, Quaternion.identity);
 				}
 
@@ -70,6 +73,10 @@ public class PlayerShooting : MonoBehaviour {
         if (other.gameObject.CompareTag("Alien"))
         {
             this._gameControllerScore.LivesValue = this._gameControllerScore.LivesValue - 1;
+        }
+        if (other.gameObject.CompareTag("Tikki"))
+        {
+            this._gameControllerScore.ScoreValue = this._gameControllerScore.ScoreValue + 20;
         }
     }
 

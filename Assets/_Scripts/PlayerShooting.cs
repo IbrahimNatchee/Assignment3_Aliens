@@ -68,7 +68,7 @@ public class PlayerShooting : MonoBehaviour {
 
     void OnTriggerEnter(Collider other){
         if (other.gameObject.CompareTag("Exit")) { 
-        SceneManager.LoadScene("OutDoor");
+        SceneManager.LoadScene("SecondLevel");
         }
         if (other.gameObject.CompareTag("Alien"))
         {
